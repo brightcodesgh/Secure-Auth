@@ -11,11 +11,10 @@ HTTP-only cookies to store access and refresh tokens, reducing XSS attack risk.
 
 Refresh token mechanism for seamless token renewal and long-lived sessions.
 
-Used crypto for secure token generation and sensitive data handling (e.g., OTPs or email confirmations).
+Used crypto for secure token generation and sensitive data handling
 
 Middleware to protect private routes and verify tokens.
 
-Role-based access (admin/user) enforced via middleware.
 
 Frontend (React + Vite):
 
@@ -25,13 +24,13 @@ Integrated protected routes using React Router and authentication guards.
 
 Secure login flow with token management via HTTP-only cookies (no token exposure in JS).
 
-Clean UI for registration, login, password reset, and OTP verification screens.
+Clean UI for registration, login
 
 Security Highlights:
 
 CSRF-protected requests through cookie design and backend validation.
 
-Prevented duplicate account creation with checks based on phone/email.
+Prevented duplicate account creation with checks based on email.
 
 Used environment variables and .env configuration for secret management.
 
